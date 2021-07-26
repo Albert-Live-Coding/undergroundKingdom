@@ -55,3 +55,163 @@ li {
 a {
   text-decoration: none;
 }
+
+:root {
+  font-size: 10px;
+  color: #140705;
+  font-family: "Lora", serif;
+}
+
+body {
+  padding-top: 8vh;
+}
+
+main {
+  margin-bottom: 15vh;
+}
+
+footer {
+  position: fixed;
+  inset: auto 0 0 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#fbf9f9));
+  background: linear-gradient(white, #fbf9f9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2vh 5vw 2vh;
+}
+
+article section {
+  margin-bottom: 6vh;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 10vw .5em;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: .75em;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12vh;
+}
+
+p {
+  font-size: 1.6rem;
+  padding: 0 5vh;
+  line-height: 1.8em;
+}
+
+a {
+  text-decoration: none;
+  color: #140705;
+  font-size: 1.8rem;
+  font-style: italic;
+  margin: .75em 0;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+a:hover {
+  color: #e6351a;
+  font-weight: 700;
+  letter-spacing: .03em;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+a:focus {
+  color: #e6351a;
+}
+
+.indexContainer header p {
+  margin-bottom: 6vh;
+}
+
+main a + p {
+  font-size: 1rem;
+}
+
+#indexFooter p {
+  text-align: center;
+  margin: .75em 0;
+}
+
+.centerTxt {
+  text-align: center;
+}
+
+.indexContainer {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.initFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.next {
+  background-color: rgba(152, 154, 154, 0.2);
+  padding: .5em 2em;
+  border-radius: 10px;
+}
+
+.next:hover {
+  color: #fbf9f9;
+  background-color: #e6351a;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.next:active {
+  text-decoration: underline;
+}
+
+.next:focus {
+  color: #e6351a;
+}
+
+/* === */
+#mainH1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: .5em;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding-bottom: 25vh;
+  }
+}

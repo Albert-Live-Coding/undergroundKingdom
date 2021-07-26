@@ -1,3 +1,37 @@
 .centerTxt{
     text-align: center;
 }
+.indexContainer{
+text-align: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.initFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.next{
+    background-color: $btnBg;
+    padding: .5em 2em;
+    border-radius: 10px;
+}
+.next:hover{
+    color: $white;
+    background-color: $accent;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+.next:active{
+    text-decoration: underline;
+}
+.next:focus{
+    color: $accent;
+}
+/* === */
+
+#mainH1{
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: .5em;
+}
