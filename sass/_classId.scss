@@ -12,6 +12,7 @@ text-align: center;
     align-items: center;
 }
 .next{
+    font-style: normal;
     background-color: $btnBg;
     padding: .5em 2em;
     border-radius: 10px;
@@ -28,10 +29,42 @@ text-align: center;
 .next:focus{
     color: $accent;
 }
+
+
 /* === */
 
 #mainH1{
         font-size: 4rem;
         font-weight: 700;
         margin-bottom: .5em;
+}
+
+#iniAnimation{
+    margin-top: 6vh;
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: iniAnimationBg 8000ms infinite;
+    background-color: $btnBg;
+
+  a{
+    font-style: normal;
+    font-family: $secondFont;
+    font-size: 5rem;
+    animation: enterAnimation 8000ms 500ms infinite;
+    :hover{
+        color: blue;
+    }    
+    :active{
+        text-decoration: wavy;
+    }
+    :focus{
+        text-decoration: underline;
+    }
+    a:focus{
+        outline: 1px solid;
+    }
+}
+
 }

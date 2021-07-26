@@ -183,6 +183,7 @@ main a + p {
 }
 
 .next {
+  font-style: normal;
   background-color: rgba(152, 154, 154, 0.2);
   padding: .5em 2em;
   border-radius: 10px;
@@ -210,8 +211,200 @@ main a + p {
   margin-bottom: .5em;
 }
 
+#iniAnimation {
+  margin-top: 6vh;
+  height: 18vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: iniAnimationBg 8000ms infinite;
+          animation: iniAnimationBg 8000ms infinite;
+  background-color: rgba(152, 154, 154, 0.2);
+}
+
+#iniAnimation a {
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  -webkit-animation: enterAnimation 8000ms 500ms infinite;
+          animation: enterAnimation 8000ms 500ms infinite;
+}
+
+#iniAnimation a :hover {
+  color: blue;
+}
+
+#iniAnimation a :active {
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+}
+
+#iniAnimation a :focus {
+  text-decoration: underline;
+}
+
+#iniAnimation a a:focus {
+  outline: 1px solid;
+}
+
 @media screen and (min-width: 768px) {
   footer {
     padding-bottom: 25vh;
+  }
+}
+
+@-webkit-keyframes enterAnimation {
+  0% {
+    letter-spacing: 0;
+    color: #140705;
+  }
+  1% {
+    letter-spacing: .25em;
+  }
+  3% {
+    letter-spacing: 0;
+  }
+  4% {
+    letter-spacing: .25em;
+  }
+  6% {
+    letter-spacing: 0;
+  }
+  20% {
+    letter-spacing: 0;
+  }
+  21% {
+    letter-spacing: .25em;
+  }
+  23% {
+    letter-spacing: 0;
+  }
+  24% {
+    letter-spacing: .25em;
+  }
+  26% {
+    letter-spacing: 0;
+  }
+  50% {
+    letter-spacing: 0;
+    color: #e6351a;
+  }
+  51% {
+    letter-spacing: .25em;
+  }
+  53% {
+    letter-spacing: 0;
+  }
+  54% {
+    letter-spacing: .25em;
+  }
+  56% {
+    letter-spacing: 0;
+  }
+  100% {
+    letter-spacing: 0;
+    color: #140705;
+  }
+}
+
+@keyframes enterAnimation {
+  0% {
+    letter-spacing: 0;
+    color: #140705;
+  }
+  1% {
+    letter-spacing: .25em;
+  }
+  3% {
+    letter-spacing: 0;
+  }
+  4% {
+    letter-spacing: .25em;
+  }
+  6% {
+    letter-spacing: 0;
+  }
+  20% {
+    letter-spacing: 0;
+  }
+  21% {
+    letter-spacing: .25em;
+  }
+  23% {
+    letter-spacing: 0;
+  }
+  24% {
+    letter-spacing: .25em;
+  }
+  26% {
+    letter-spacing: 0;
+  }
+  50% {
+    letter-spacing: 0;
+    color: #e6351a;
+  }
+  51% {
+    letter-spacing: .25em;
+  }
+  53% {
+    letter-spacing: 0;
+  }
+  54% {
+    letter-spacing: .25em;
+  }
+  56% {
+    letter-spacing: 0;
+  }
+  100% {
+    letter-spacing: 0;
+    color: #140705;
+  }
+}
+
+@-webkit-keyframes iniAnimationBg {
+  0% {
+    background-color: #2d2e2e;
+  }
+  10% {
+    background-color: #2d2e2e;
+  }
+  40% {
+    background-color: rgba(152, 154, 154, 0.2);
+  }
+  60% {
+    background-color: rgba(152, 154, 154, 0.2);
+  }
+  90% {
+    background-color: #2d2e2e;
+  }
+  100% {
+    background-color: #2d2e2e;
+  }
+}
+
+@keyframes iniAnimationBg {
+  0% {
+    background-color: #2d2e2e;
+  }
+  10% {
+    background-color: #2d2e2e;
+  }
+  40% {
+    background-color: rgba(152, 154, 154, 0.2);
+  }
+  60% {
+    background-color: rgba(152, 154, 154, 0.2);
+  }
+  90% {
+    background-color: #2d2e2e;
+  }
+  100% {
+    background-color: #2d2e2e;
   }
 }
